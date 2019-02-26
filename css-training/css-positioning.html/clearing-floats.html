@@ -113,6 +113,28 @@
             text-align: center;
             color: rgb(165, 45, 65);
         }
+
+        nav {
+            background: #333;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+
+        }
+
+        nav li {
+            list-style-type: none;
+            margin: 0 10px;
+            color: #fff;
+            float: right;
+        }
+
+        nav ul:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
     </style>
 </head>
 
@@ -179,8 +201,16 @@
                     sit, ducimus, rerum voluptas voluptatem aliquam earum, odit voluptatum?</p>
                 <img src="./cloud.jpeg" alt="cloud" width="100%">
             </aside>
-
         </div>
+
+        <nav>
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </nav>
     </div>
 </body>
 
