@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Service</title>
+    <title>Clearing Floats</title>
     <style>
         body {
             background-color: #f6f6f6;
@@ -13,7 +13,7 @@
 
         .wrapper {
             background: #fff;
-            margin: 20px 30px;
+            margin: 20px auto;
             padding: 20px;
             max-width: 960px;
 
@@ -46,11 +46,26 @@
             padding: 10px;
             background: #ccc;
             clear: both;
-            margin-top: 50px;
+            margin: 20px 1%;
         }
 
         /* Clear the float */
         .services:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        section,
+        aside {
+            float: left;
+            width: 46%;
+            margin: 1%;
+            margin: 1%;
+            background: #f2f2f2;
+        }
+
+        .columns:after {
             content: "";
             display: block;
             clear: both;
@@ -77,6 +92,7 @@
         <!-- Clear the float -->
         <!-- <div style="clear:both"></div> -->
 
+
         <div class="content">
             <h2>Content</h2>
             <p>
@@ -87,6 +103,35 @@
                 voluptatibus ipsam ea. Est, aperiam voluptates ipsa neque itaque eveniet ullam. Blanditiis odio sapiente
                 sunt voluptatem molestiae accusantium numquam quibusdam quasi magni?
             </p>
+        </div>
+
+        <div class="columns">
+            <section>
+                <h2>This is column 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque asperiores quia veniam voluptate cum
+                    eius iure laudantium, recusandae, ea impedit sit assumenda accusantium id at dolorum molestias,
+                    commodi mollitia iusto aut. Eos neque delectus cumque esse magnam? Inventore ullam, reprehenderit
+                    error neque quod non eaque, blanditiis odit aspernatur ipsa aperiam laudantium vitae! Dolores unde
+                    eveniet perferendis fuga voluptatem nemo commodi voluptatibus architecto sed, provident doloremque
+                    nisi ex! Quis at placeat quas illum sapiente odio architecto animi dolor cupiditate unde eius
+                    tempora minus numquam aspernatur nostrum, reiciendis, nulla delectus eaque a! Quos itaque nesciunt
+                    doloribus sapiente repellendus, non, praesentium voluptatem qui in harum velit tempora placeat
+                    nostrum est facere, sint ipsum cumque omnis. Eaque quisquam nesciunt fugit alias eius pariatur
+                    architecto labore, reprehenderit rem non hic expedita error id et delectus sit similique aspernatur.
+                    Cumque quod ipsam repellendus aspernatur dolore doloribus sit explicabo quibusdam soluta ad nobis,
+                    ratione labore quisquam similique?</p>
+            </section>
+            <aside>
+                <h2>This is column 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur mollitia optio obcaecati magni
+                    explicabo esse expedita repellendus, amet consectetur vel qui corporis cupiditate architecto fuga
+                    soluta
+                    dignissimos placeat est earum culpa impedit minima error? Saepe eum labore eius in cupiditate
+                    explicabo
+                    sit, ducimus, rerum voluptas voluptatem aliquam earum, odit voluptatum?</p>
+                <img src="./cloud.jpeg" alt="cloud" width="100%">
+            </aside>
+
         </div>
     </div>
 </body>
