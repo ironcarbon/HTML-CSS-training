@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Shadows</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            padding: 1rem;
+            margin: 1rem;
+            background: pink;
+            color: purple;
+
+            /* offset-x | offset-y  | color    // 3rd value is for blurring*/
+            box-shadow: 10px 10px 20px rgb(168, 69, 86);
+
+            /* Negative values  */
+            box-shadow: -5px -5px 20px rgb(168, 69, 86);
+
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4);
+
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset -3px -3px rgb(168, 69, 86);
+
+            /* multiple Shadows */
+            box-shadow: 3px 3px 8px rgb(168, 69, 86), -3px -3px 8px rgb(90, 15, 28)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, ea?</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, ea?</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, ea?</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
